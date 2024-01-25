@@ -364,7 +364,7 @@ body {
 
 #headerWrapper {
   background-color: white;
-  color: rgb(128, 128, 0);
+  color: rgb(9, 94, 0);
 }
 
 header {
@@ -377,11 +377,11 @@ header h1 {
   margin: 0;
   font-size: 1.2rem;
   font-weight: 600;
-  color: rgb(128, 128, 0);
+  color: rgb(9, 94, 0);
 }
 
 #navWrapper {
-  background-color: rgb(128, 128, 0);
+  background-color: rgb(9, 94, 0);
 }
 
 nav ul {
@@ -389,13 +389,13 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  color: rgb(128, 128, 0);
+  color: rgb(9, 94, 0);
 }
 nav ul li {
   flex: 1;
 }
 nav li.active {
-  background-color: rgb(128, 128, 0);
+  background-color: rgb(9, 94, 0);
 }
 nav a {
   display: block;
@@ -405,16 +405,16 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-  color: black;
+  color: white;
 }
 
 #mainWrapper h1 {
-  color: rgb(128, 128, 0);
+  color: rgb(9, 94, 0);
   font-weight: 400;
 }
 
 #footerWrapper {
-  background-color: rgb(128, 128, 0);
+  background-color: rgb(9, 94, 0);
 }
 
 footer {
