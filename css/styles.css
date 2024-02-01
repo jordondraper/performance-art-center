@@ -364,7 +364,7 @@ body {
 
 #headerWrapper {
   background-color: white;
-  color: rgb(9, 94, 0);
+  color: white;
 }
 
 header {
@@ -377,11 +377,20 @@ header h1 {
   margin: 0;
   font-size: 1.2rem;
   font-weight: 600;
-  color: rgb(9, 94, 0);
+}
+
+.gradient-text {
+  background-color: rgb(12, 67, 185);
+  background-image: linear-gradient(45deg, #1f7ba5, rgb(155, 49, 174), #831dd7, #1f7ba5);
+  background-size: 100%;
+  background-repeat: repeat;
+  width: 300px;
+  text-align: center;
+  border-radius: 5px;
 }
 
 #navWrapper {
-  background-color: rgb(9, 94, 0);
+  background-color: #1f7ba5;
 }
 
 nav ul {
@@ -389,13 +398,16 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  color: rgb(9, 94, 0);
+  color: white;
 }
 nav ul li {
   flex: 1;
 }
 nav li.active {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(79, 4, 133);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
 }
 nav a {
   display: block;
@@ -408,13 +420,41 @@ nav a:hover {
   color: white;
 }
 
+.parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+.parent img {
+  width: 100%;
+  height: auto;
+}
+
+.parent div {
+  width: 100%;
+}
+
 #mainWrapper h1 {
-  color: rgb(9, 94, 0);
-  font-weight: 400;
+  font-weight: 600;
+  color: rgb(110, 28, 110);
+  padding: 16px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 10px 16px;
+}
+
+.parent h2, p {
+  color: black;
+  margin: 1vw;
 }
 
 #footerWrapper {
-  background-color: rgb(9, 94, 0);
+  background-color: #1f7ba5;
 }
 
 footer {
@@ -424,6 +464,7 @@ footer p {
   margin: 0;
   font-weight: 200;
   text-align: center;
+  color: white;
 }
 
 @media only screen and (min-width: 35rem) {
@@ -433,10 +474,18 @@ footer p {
   header h1 {
     font-size: 2rem;
   }
+
+  .parent {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
     max-width: 60rem;
     margin: auto;
+  }
+
+  .parent {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
