@@ -448,7 +448,7 @@ nav a:hover {
   padding: 10px 16px;
 }
 
-.parent h2, p {
+.parent h2, h3, p {
   color: black;
   margin: 1vw;
 }
