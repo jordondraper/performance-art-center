@@ -6,3 +6,14 @@ header {
 .parent {
     grid-template-columns: 1fr 1fr;
   }
+
+nav {
+
+    ul {
+        display: flex;
+    } // end ul
+    ul li a {
+        border: none;
+    }
+
+} // end nav
