@@ -363,12 +363,8 @@ body {
 }
 
 #headerWrapper {
-  background-color: white;
-  color: white;
-}
-#headerWrapper h3 p {
-  margin: 0;
-  text-align: right;
+  color: rgba(165, 82, 31, 0.9294117647);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 header {
@@ -377,24 +373,14 @@ header {
   padding: 1rem 16px;
   gap: 8px;
 }
-header h1 {
+header x h1 {
   margin: 0;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-.gradient-text {
-  background-color: rgb(12, 67, 185);
-  background-image: linear-gradient(45deg, #1f7ba5, rgb(155, 49, 174), #831dd7, #1f7ba5);
-  background-size: 100%;
-  background-repeat: repeat;
-  width: 300px;
-  text-align: center;
-  border-radius: 5px;
-}
-
 #navWrapper {
-  background-color: #1f7ba5;
+  background-color: #a5521f;
 }
 
 nav ul li a {
@@ -415,7 +401,7 @@ nav ul li {
   flex: 1;
 }
 nav li.active {
-  background-color: #a229f9;
+  background-color: rgb(182, 26, 12);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: white;
 }
@@ -430,41 +416,49 @@ nav a:hover {
   color: white;
 }
 
-.parent {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  padding: 1rem;
-  margin: 1rem;
-}
-.parent img {
-  width: 100%;
-  height: auto;
-}
-
-.parent div {
-  width: 100%;
-}
-
 #mainWrapper h1 {
   font-weight: 600;
-  color: rgb(110, 28, 110);
+  color: #a5521f;
+  margin: 2rem;
   padding: 16px;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  padding: 10px 16px;
+#ze {
+  color: black;
+  margin: 2rem;
+  padding: 16px;
 }
 
-.parent h2, h3, p {
+picture img {
+  margin: 5rem;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+video {
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+details {
+  color: white;
+  margin: 0.5rem 16px;
+}
+details summary {
+  background-color: rgb(182, 26, 12);
+  padding: 0.7rem;
+  border-radius: 5px;
+  margin: 2rem;
+}
+details p {
   color: black;
-  margin: 1vw;
+  padding: 1rem;
 }
 
 #footerWrapper {
-  background-color: #1f7ba5;
+  background-color: #a5521f;
 }
 
 footer {

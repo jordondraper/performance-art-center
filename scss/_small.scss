@@ -19,19 +19,15 @@ body {
 }
 
 #headerWrapper {
-  background-color: $fontColor;
-  color: white;
-  h3 p {
-    margin: 0;
-    text-align: right;
-  }
+  color: #a5521fed;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 header {
   display: flex;
   justify-content:left;
   padding: 1rem $gutter;
-  gap: 8px;
+  gap: 8px;x
   h1 {
     margin: 0;
     font-size: 1.2rem;
@@ -39,19 +35,10 @@ header {
   }
 }
 
-.gradient-text {
 
-  background-color: rgb(12, 67, 185);
-  background-image: linear-gradient(45deg, #1f7ba5, rgb(155, 49, 174),#831dd7, #1f7ba5);
-  background-size: 100%;
-  background-repeat: repeat;
-  width: 300px;
-  text-align: center;
-  border-radius: 5px;
-}
 
 #navWrapper {
-  background-color: #1f7ba5;
+  background-color: #a5521f;
 }
 
 nav {
@@ -75,7 +62,7 @@ nav {
     }
   }
   li.active {
-    background-color: lighten(rgb(79, 4, 133), 30%);
+    background-color:rgb(182, 26, 12);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: white;
   }
@@ -91,46 +78,60 @@ nav {
   }
 }
 
-.parent {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  padding: 1rem;
-  margin: 1rem;
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
 
-.parent div {
-  width: 100%;
-}
+
 
 #mainWrapper {
   h1 {
     font-weight: $boldWeight;
-    color: rgb(110, 28, 110);
+    color: #a5521f;
+    margin: 2rem;
     padding: $gutter;
   }
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-  padding: 10px $gutter;
-}
-
-
-.parent h2, h3, p {
+#ze {
   color: black;
-  margin: 1vw;
+  margin: 2rem;
+  padding: $gutter;
 }
+
+picture {
+ img {
+  margin: 5rem;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+}
+
+video {
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+details {
+  color: white;
+  margin: .5rem $gutter;
+  summary {
+    background-color:rgb(182, 26, 12);
+    padding: .7rem;
+    border-radius: 5px;
+    margin: 2rem;
+  }
+  p {
+    color: black;
+    padding: 1rem;
+  }
+
+}
+
 
 // begin the footer
 
 #footerWrapper {
-  background-color: #1f7ba5;
+  background-color: #a5521f;
 }
 footer {
   padding: 0.5rem $gutter;
