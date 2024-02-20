@@ -90,42 +90,9 @@ nav {
   }
 }
 
-#ze {
-  color: black;
-  margin: 2rem;
-  padding: $gutter;
-}
 
-picture {
- img {
-  margin: 5rem;
-  width: 90%;
-  margin-left: 5%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- }
-}
 
-video {
-  width: 90%;
-  margin-left: 5%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
-details {
-  color: white;
-  margin: .5rem $gutter;
-  summary {
-    background-color:rgb(182, 26, 12);
-    padding: .7rem;
-    border-radius: 5px;
-    margin: 2rem;
-  }
-  p {
-    color: black;
-    padding: 1rem;
-  }
-
-}
 
 
 // begin the footer
