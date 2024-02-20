@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 
@@ -18,7 +18,10 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
 <link rel="manifest" href="favicon_io-arch/site.webmanifest">
+<link rel="manifest" href="favicon_diner/site.webmanifest">
+
 
 
 </head>
@@ -26,16 +29,17 @@
     
 <div id="headerWrapper">
     <header>
-        <img src="favicon_io-arch/architecture.logo.png" alt="logo" width="75" height="75">
-        <h1 class="gradient-text">Big Architect Services</h1>
+        <img src="favicon_diner/favicon.ico" alt="logo" width="75" height="75">
+        <h1 class="gradient-text">Joe Mamma's Diner</h1>
     </header>
 </div>
 
 
 <div id="navWrapper">
     <nav>
-       <ul>
-        <li class="active"><a href="#">Home</a></li>
+        <button id="funButton">&#9776;</button>
+       <ul id="primaryNav">
+        <li class="active"><a href="#">Menu</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Contact</a></li>
        </ul>
@@ -46,18 +50,89 @@
 <main>
     <h1>Inventory</h1>
    
+=======
+<div class="allcards">
+    <section>
+        <h2>Plump Pancakes</h2>
+        <img src="images/pancakes_diner.webp" alt="pancakes" width="300" height="175" class="e2e">
+        <p>Indulge in a delectable feast of fluffy pancakes topped with maple syrup, fresh berries, and a dollop of whipped cream.</p>
+        <a href="#">Click to Order</a>
+    </section> 
+        
+    <section><img src="images/frenchtoast_diner.webp" alt="french toast" width="300" height="175" class="e2e">
+        <h2>Famous French Toast</h2>
+        <p>Delight in a delightful breakfast at our diner with golden-brown French toast, topped with maple syrup and powdered sugar perfection.</p>
+        <a href="#">Click to Order</a></section>
+        
+        <section>
+            <h2>Shove Your Mouth Full Breakfast Slam</h2>
+            <p>Take on a hearty breakfast slam at our diner, featuring a delicious medley of eggs, bacon, hash browns, and grits.</p>
+            <a href="#">Click to Order</a>
+            <img src="images/breakfastslam_diner.webp" alt="breakfast slam" width="300" height="175" class="e2e">
+        </section>
+        
+    
+        <section>
+            <h2>Perfect Patty Melt</h2>
+            <img src="images/pattymelt_diner.webp" alt="patty melt" width="300" height="175" class="e2e">
+            <p>Do you think you can take on this Joe Mamma's Diner Classic? Savor a classic patty melt meal: juicy beef patty, melted cheese, caramelized onions on rye, served with golden crispy fries.</p>
+            <a href="#">Click to Order</a>
+        </section>
+        
 
+       <section>
+        <img src="images/baconcheesburger_diner.webp" alt="burger" width="300" height="175" class="e2e">
+        <h2>Bring it on Bacon Cheeseburger</h2>
+        <p>Dig into a delicious bacon cheeseburger, grilled to perfection, nestled in a soft bun, served with golden crispy fries.</p>
+        <a href="#">Click to Order</a>
+       </section>
+       
+       <section>
+        <h2>Chow Down Country Fried Chicken</h2>
+        <img src="images/chickenfried_diner.webp" alt="chicken" width="300" height="175" class="e2e">
+        <p>Challenge this country fried chicken meal, complete with your choice of veggies, dinner bread, and a comforting side of mashed potatoes with gravy.</p>
+        <a href="#">Click to Order</a>
+       </section>
+
+</div>
 </main>
 </div>
 
 
 <div id="footerWrapper">
 <footer>
-    <p> &copy; <span id="year">x</span> &bull; Jordon Draper</p>
+    <div>
+        <section class="contact">
+            <p><ion-icon name="person-outline"></ion-icon>Joe Mamma</p>
+            <p><ion-icon name="restaurant-outline"></ion-icon>Joe Mamma's Diner</p>
+            <p><a href="mailto:joemamma@joemamma.com"><ion-icon name="mail-outline"></ion-icon>joemamma@joemamma.com</a></p>
+            <p><a href="https://joemamma.com"><ion-icon name="home-outline"></ion-icon>joemamma.com</a></p>
+            <p><a href="tel:4354441234"><ion-icon name="call-outline"></ion-icon>(435)-444-1234</a></p>
+
+        </section>
+        
+        <section class="social">
+           <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+           <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+           <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+           <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+           <a href="#"><ion-icon name="logo-snapchat"></ion-icon></a>
+        </section>
+        
+        <section class="location">
+            <address>415 Joe Mamma Rd. <br> Joe Mammaville <br> Louisiana, USA</address>
+        </section>
+    </div>
+
+
+
+    <p class="legal"> &copy; <span id="year">x</span> &bull; Jordon Draper</p>
 </footer>
 
 
 </div>
 <script src="js/scripts.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
