@@ -7,7 +7,33 @@ header, nav, main, footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  nav {
+    button {
+      display: none;
+    }
+    ul, ul.open {
+      display: flex;
+      border: none;
+    }
+    ul li {
+      border: none;
+    }
+  }//end nav
+
   nav ul li a {
     padding: .7rem 2rem;
     font-size: .8rem;
+    text-align: right;
   } // end nav
+
+
+  .allcards {
+    section {
+        flex-basis: calc(33.333% - ((($gutter*2)/3)));
+    }
+}
+
+footer div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}

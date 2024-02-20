@@ -19,11 +19,12 @@ body {
 }
 
 #headerWrapper {
-  color: #a5521fed;
+  color: #fff0cf;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 header {
+  background-color: #a5521f;
   display: flex;
   justify-content:left;
   padding: 1rem $gutter;
@@ -38,14 +39,25 @@ header {
 
 
 #navWrapper {
-  background-color: #a5521f;
+  background-color: #019c9e;
 }
 
+
 nav {
+  button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  padding: .5rem;
+  color: #86114a;
+
+  }// end button
   ul li a {
     display: block;
     padding: .9rem 2vw;
     border-top: solid 1px rgba(0,0,0,0.2);
+    text-align: left;
+    color: white;
   }
 
   ul li a:hover {
@@ -53,18 +65,21 @@ nav {
 
   }
   ul {
+    display: none;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    color: white;
-    li {
-      flex: 1;
-    }
+    color: #fff0cf;
+
+  ul.open {
+  display: block;
+}
+  
   }
   li.active {
-    background-color:rgb(182, 26, 12);
+    background-color: #86114a;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: white;
+    color: #fff0cf;
   }
   a {
     display: block;
@@ -73,59 +88,64 @@ nav {
     text-align: center;
     text-decoration: none;
     &:hover {
-      color: white;
+      color: #fff0cf;
     }
   }
-}
+}//end nav
 
-
-
-
-#mainWrapper {
-  h1 {
-    font-weight: $boldWeight;
-    color: #a5521f;
-    margin: 2rem;
-    padding: $gutter;
+.allcards {
+  padding: 0 $gutter;
+  color: #fff0cf;
+  
+  section {
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    h2, p, img {
+      margin: 0;
+      padding: 1rem $gutter;
+    }
   }
-}
-
-#ze {
-  color: black;
-  margin: 2rem;
-  padding: $gutter;
-}
-
-picture {
- img {
-  margin: 5rem;
-  width: 90%;
-  margin-left: 5%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- }
-}
-
-video {
-  width: 90%;
-  margin-left: 5%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-details {
-  color: white;
-  margin: .5rem $gutter;
-  summary {
-    background-color:rgb(182, 26, 12);
-    padding: .7rem;
-    border-radius: 5px;
-    margin: 2rem;
+  h2 {
+    background-color: #019c9e;
+    font-size: 2rem;
   }
   p {
+    font-style: italic;
     color: black;
-    padding: 1rem;
+    font-weight: $lightWeight;
   }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .e2e {
+    padding: 0;
+  }
+  a {
+    display: block;
+    background-color: #86114a;
+    color: white;
+    padding: .75rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 3rem 1rem 3rem;
+    border-radius: 8px;
+    
+  }
+  a:hover {
+    background-color: white;
+    color: #86114a;
+    border: solid 1px #86114a;
+  }
+} // end all cards
 
-}
+
+
+
+
 
 
 // begin the footer
@@ -133,12 +153,60 @@ details {
 #footerWrapper {
   background-color: #a5521f;
 }
+
 footer {
-  padding: 0.5rem $gutter;
-  p {
+  padding: 0.5 $gutter;
+
+ 
+
+  .contact {
+    padding: .5rem;
+    a {
+      color: #fff0cf;
+    }
+    p {
+      font-size: .8rem;
+      margin: .5rem;
+      font-weight: $boldWeight;
+      color: #fff0cf;
+    }
+    ion-icon {
+    padding-right: 5px;
+  }
+
+  }//end of contact
+
+  .social {
+    display: flex;
+    justify-content: center;
+    a {
+      display: block;
+      border: solid 1px #019c9e;
+      border-radius: 5px;
+      font-size: 2rem;
+      margin: .5rem;
+      padding: .5rem;
+      color: #fff0cf;
+      &:hover {
+        background-color: #019c9e;
+        color: #86114a;
+      }
+    }
+    
+  }// end of social
+
+  .location {
+    font-size: 1rem;
+    padding: .5rem;
+    font-weight: $lightWeight;
+    color: #fff0cf;
+
+  }// end of location
+
+  p.legal {
     margin: 0;
     font-weight: $lightWeight;
     text-align: center;
-    color: white;
+    color: #fff0cf;
   }
 }
